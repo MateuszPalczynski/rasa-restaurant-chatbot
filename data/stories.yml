@@ -1,0 +1,46 @@
+version: "3.1"
+
+stories:
+
+  - story: Ask opening hours
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_opening_hours
+        entities:
+          - day: 'Monday'
+          - time: '5 pm'
+      - action: action_display_opening_hours
+
+  - story: List menu items
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: list_menu_items
+      - action: action_list_menu
+
+  - story: Place an order with delivery
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: place_order
+        entities:
+          - food: "Pizza"
+          - food: "Burger"
+      - action: action_extract_food
+      - intent: affirm_delivery
+      - action: action_show_pickup_time
+
+  - story: Place an order with pick-up
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: place_order
+        entities:
+          - food: "Pizza"
+          - food: "Burger"
+      - action: action_extract_food
+      - intent: affirm_pickup
+      - action: utter_ask_address
+      - intent: affirm_address
+      - action: action_show_delivery_time

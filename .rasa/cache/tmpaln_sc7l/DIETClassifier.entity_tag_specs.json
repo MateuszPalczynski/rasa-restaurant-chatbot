@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-day",
+      "2": "I-day",
+      "3": "L-day",
+      "4": "U-day",
+      "5": "B-food",
+      "6": "I-food",
+      "7": "L-food",
+      "8": "U-food",
+      "9": "B-food_item",
+      "10": "I-food_item",
+      "11": "L-food_item",
+      "12": "U-food_item",
+      "13": "B-time",
+      "14": "I-time",
+      "15": "L-time",
+      "16": "U-time",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-day": 1,
+      "I-day": 2,
+      "L-day": 3,
+      "U-day": 4,
+      "B-food": 5,
+      "I-food": 6,
+      "L-food": 7,
+      "U-food": 8,
+      "B-food_item": 9,
+      "I-food_item": 10,
+      "L-food_item": 11,
+      "U-food_item": 12,
+      "B-time": 13,
+      "I-time": 14,
+      "L-time": 15,
+      "U-time": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

@@ -1,0 +1,55 @@
+version: '3.1'
+intents:
+- affirm_address
+- affirm_delivery
+- affirm_pickup
+- ask_opening_hours
+- bot_challenge
+- goodbye
+- greet
+- list_menu_items
+- place_order
+entities:
+- food
+- address
+- day
+- time
+slots:
+  food:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: food
+responses:
+  utter_greet:
+  - text: Hello! How can I help you today?
+  utter_goodbye:
+  - text: Goodbye! Have a nice day!
+  utter_ask_day:
+  - text: Which day would you like to check the opening hours for?
+  utter_list_menu:
+  - text: 'Here is our menu: {menu_items}'
+  utter_confirm_order:
+  - text: Thank you! Your order for {food_item} has been placed. It will be ready in {preparation_time} hours.
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_order:
+  - text: Sure, what kind of food do you want?
+  utter_ask_address:
+  - text: Give me your address please.
+actions:
+- utter_greet
+- action_show_delivery_time
+- action_extract_food
+- utter_ask_address
+- action_show_pickup_time
+- utter_confirm1
+- utter_confirm2
+- action_check_opening_hours
+- action_list_menu
+- action_place_order
+- action_display_opening_hours
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,119 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: ask_opening_hours
+  examples: |
+    - Are you open on [Monday](day) at [1 pm](time)?
+    - Are you open on [Tuesday](day) at [2 pm](time)?
+    - Are you open on [Wednesday](day) at [3 pm](time)?
+    - Are you open on [Thursday](day) at [4 pm](time)?
+    - Are you open on [Friday](day) at [5 pm](time)?
+    - Are you open on [Saturday](day) at [6 pm](time)?
+    - Are you open on [Sunday](day) at [7 pm](time)?
+    - Are you open on [Friday](day) at [8 pm](time)?
+    - Are you open on [Monday](day) at [9 pm](time)?
+    - Are you open on [Friday](day) at [10 pm](time)?
+    - Are you open on [Thursday](day) at [11 pm](time)?
+    - Are you open on [Wednesday](day) at [12 pm](time)?
+    - Are you open on [Monday](day) at [1 am](time)?
+    - Are you open on [Tuesday](day) at [2 am](time)?
+    - Are you open on [Wednesday](day) at [3 am](time)?
+    - Are you open on [Thursday](day) at [4 am](time)?
+    - Are you open on [Tuesday](day) at [5 am](time)?
+    - Are you open on [Monday](day) at [6 am](time)?
+    - Are you open on [Tuesday](day) at [7 am](time)?
+    - Are you open on [Wednesday](day) at [8 am](time)?
+    - Are you open on [Thursday](day) at [9 am](time)?
+    - Are you open on [Friday](day) at [10 am](time)?
+    - Are you open on [Saturday](day) at [11 am](time)?
+    - Are you open on [Sunday](day) at [12 am](time)?
+- intent: list_menu_items
+  examples: |
+    - Can I see the menu?
+    - What dishes do you have?
+    - Show me your menu items
+    - What do you have to eat?
+- intent: place_order
+  examples: |
+    - I'd like to order a [Pizza](food)
+    - Can I have [Pizza](food)?
+    - I want to order a [Pizza](food)
+    - Can i get a [Pizza](food)?
+    - I'd like to have a [Pizza](food)
+    - Let's order a [Pizza](food)
+    - How about a [Pizza](food)?
+    - I'd like to order a [Steak](food)
+    - Can I have [Burger](food)?
+    - I want to order a [Pasta](food)
+    - Can i get a [Hot-dog](food)?
+    - I'd like to have a [Lasagne](food)
+    - Let's order a [Tiramisu](food)
+    - How about a [Spaghetti Carbonara](food)?
+    - I'd like to order a [Hot-dog](food)
+    - Can I have [Spaghetti Carbonara](food)?
+    - I want to order a [Tiramisu](food)
+    - Can i get a [Lasagne](food)?
+    - I'd like to have a [Pasta](food)
+    - Let's order a [Burger](food)
+    - How about a [Steak](food)?
+    - I would like to order a food
+    - i would like to order food
+    - I'd like to order a [Pizza](food) with extra cheese
+    - Can I have [Hamburger](food) without meal?
+    - I would like [Lasagne](food)!
+- intent: affirm_delivery
+  examples: |
+    - Please have it delivered to me
+    - I’d like it brought to my place
+    - Can you deliver it to my address?
+    - I prefer delivery, thank you
+- intent: affirm_pickup
+  examples: |
+    - I'll pick it up at the restaurant
+    - I'll swing by and grab it myself
+    - I prefer to pick it up on my way
+    - I’ll stop by the restaurant to collect
+    - Ill stop by the restaurant to collect
+- intent: affirm_address
+  examples: |
+    - [Krucza 50](address)
+    - [Grunwaldzka 100](address)
+    - [Piotrkowska 125](address)
+    - [Świdnicka 10](address)
+    - [Rynek Główny 1](address)
+    - [Długa 22](address)
+    - [Zwycięstwa 50](address)
+    - [Warszawska 10](address)
+    - [Krucza 50](address)
