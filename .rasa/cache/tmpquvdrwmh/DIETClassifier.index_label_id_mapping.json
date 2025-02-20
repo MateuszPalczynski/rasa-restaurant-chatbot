@@ -1,0 +1,11 @@
+{
+  "0": "affirm_address",
+  "1": "affirm_delivery",
+  "2": "affirm_pickup",
+  "3": "ask_opening_hours",
+  "4": "bot_challenge",
+  "5": "goodbye",
+  "6": "greet",
+  "7": "list_menu_items",
+  "8": "place_order"
+}
