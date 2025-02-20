@@ -1,9 +1,9 @@
 # Rasa Restaurant Chatbot
 
-## 📋 Project Overview
+## Project Overview
 The **Rasa Restaurant Chatbot** is designed to handle customer interactions for a restaurant. It provides users with essential information and enables them to place food orders through natural language conversations. The chatbot is built using **Rasa** and is integrated with **Facebook Messenger** for real-time customer engagement.
 
-## 🎯 Features
+## Features
 - **Check Opening Hours:** Responds to customer inquiries about whether the restaurant is open on a specific date and time.
 - **Menu Listing:** Lists available menu items from a configurable file.
 - **Order Placement:** Processes customer orders, and provides order confirmation.
@@ -11,7 +11,7 @@ The **Rasa Restaurant Chatbot** is designed to handle customer interactions for 
 - **Dynamic Configuration:** Opening hours and menu items are fetched from a configuration file.
 - **Messenger Integration:** Fully integrated with **Facebook Messenger** with a dedicated page.
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python 3
