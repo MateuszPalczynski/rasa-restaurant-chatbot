@@ -14,8 +14,12 @@ The **Rasa Restaurant Chatbot** is designed to handle customer interactions for 
 ## Getting Started
 
 ### Prerequisites
-- Python 3
-- Rasa
+- Configured Python environment
+- Install Rasa and necessary dependencies
+- Initialize the Rasa project by running:
+    ```bash
+   rasa init
+   ```
 - Ngrok
 - Facebook Developer Account
 
